@@ -1,4 +1,4 @@
-const crypto = require('crypto')
+const crypto = require('crypto');
 
 module.exports = ({ env }) => ({
   auth: {
@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
   },
   transfer: {
     token:{
-      salt: env('TRANSFER_TOKEN_SALT', ['AbVFFgQjzeVJl597D1wKLa=='] || crypto.randomBytes(16).toString('base64')),
+      salt: env('TRANSFER_TOKEN_SALT', ['AbVFFgQjzeVJl597D1wKLa==']) || crypto.randomBytes(16).toString('base64'),
     },
   },
 });
