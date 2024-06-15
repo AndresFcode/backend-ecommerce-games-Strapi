@@ -7,9 +7,8 @@ module.exports = ({ env }) => ({
   apiToken: {
     salt: env('API_TOKEN_SALT', ['ZnJR4BwF9yFLyV4yh4IAKA==']),
   },
-  transfer: {
-    token:{
+  transferToken: {
+
       salt: env('TRANSFER_TOKEN_SALT', ['AbVFFgQjzeVJl597D1wKLa==']) || crypto.randomBytes(16).toString('base64'),
-    },
   },
 });
