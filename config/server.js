@@ -8,14 +8,3 @@ module.exports = ({ env }) => ({
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
 });
-
-const nextjsDistDir = join("src", require("./src/next.config.js").distDir);
-const nextjsServer = next({
-  dev: isDev,
-  conf: {
-    distDir: nextjsDistDir,
-    images: {
-      domains: ['https://ecommerce-games-strapi-production.up.railway.app'],
-    }
-  }
-});
