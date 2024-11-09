@@ -1,5 +1,9 @@
-Ecommerce sitio web:
-https://ecommerce-games-next.vercel.app/
+
+Link: https://ecommerce-games-next.vercel.app/
+
+- Modelos hechos en Strapi.
+
+- Endpoints para crear, editar, eliminar, leer registros de la base de datos y creacioón de endpoints desde cero haciendo override a controladores de Strapi.
 
 
 # 🚀 Getting started with Strapi
